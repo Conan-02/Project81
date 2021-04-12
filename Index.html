@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>The Olympics!!!</title>
+    </head>
+
+    <body style="background-color: black">
+        <center>
+        <h1 style="color:white; 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 75px;">The Olympics!!!</h1>
+        <br>
+        <canvas id="canvas" height="400px" width="800" style="border: grey;border-width: 10px; background-color: white; border-style: ridge;"></canvas>
+        </center>
+    </body>
+
+    <script>
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+
+        color = "blue";
+        width = "10";
+        ctx.beginPath();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = width;
+        ctx.arc(125, 130, 120, 0, 2*Math.PI);
+        ctx.stroke();
+
+        color = "black";
+        ctx.beginPath();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = width;
+        ctx.arc(400, 130, 120, 0, 2*Math.PI);
+        ctx.stroke();
+
+        color = "red";
+        ctx.beginPath();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = width;
+        ctx.arc(675, 130, 120, 0, 2*Math.PI);
+        ctx.stroke();
+
+        color = "yellow";
+        ctx.beginPath();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = width;
+        ctx.arc(262, 270, 120, 0, 2*Math.PI);
+        ctx.stroke();
+
+        color = "green";
+        ctx.beginPath();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = width;
+        ctx.arc(535, 270, 120, 0, 2*Math.PI);
+        ctx.stroke();
+    </script>
+
+</html>
